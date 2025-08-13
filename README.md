@@ -4,4 +4,4 @@
 
 - ### [Reverse Characters](./Reverse-Characters/README.md)
 
-- ### [Reverse Characters](./Remove-Middle-Value/README.md)
+- ### [Remove-Middle-Value](./Remove-Middle-Value/README.md)
