@@ -5,3 +5,5 @@
 ![Linked list app.js](./app.png)
 
 ![Linked list test cases](./test.png)
+
+[![Linked list Whiteboard](./whiteboard.jpg)](https://miro.com/app/board/uXjVJQi0aF0=/?share_link_id=716433558706)
