@@ -1,6 +1,6 @@
-### Challenge 02: Minimum Value
+### Linked List Implementation
 
-#### A function that takes an array and returns the minimum number in it.
+#### Implement a singly linked list data structure in JavaScript.
 
 ![Linked list app.js](./app.png)
 
