@@ -1,4 +1,6 @@
 const LinkedList = require("./LinkedList");
+const reverse = require("./reverse/reverse");
+
 
 const list = new LinkedList();
 console.log("LIST 1");
@@ -18,9 +20,10 @@ list.insertAt(5,"new");
 list.display();
 list.remove("new");
 list.display();
+list.reverse();
+list.display();
 
-
-console.log("\n\nLIST 2");
+console.log("\nLIST 2");
 console.log("---------------------");
 
 const list1 = new LinkedList();
@@ -43,3 +46,36 @@ console.log("does 22 exist?", list1.include(22));
 
 list1.insertAt(3, 11);
 list1.display();
+list1.reverse();
+list1.display();
+list1.reverse();
+list1.display();
+
+console.log("\nLIST 3");
+console.log("---------------------");
+
+
+const list2 = new LinkedList();
+list2.add(1);
+list2.display();
+list2.reverse();
+list2.display();
+
+
+console.log("\nLIST 4");
+console.log("---------------------");
+
+const list3 = new LinkedList();
+list3.reverse();
+
+console.log("\nLIST 5");
+console.log("---------------------");
+
+const list4 = new LinkedList();
+list4.add("apple");
+list4.add("banana");
+list4.add("strawberry");
+list4.add("mango");
+list4.display();
+reverse(list4);
+list4.display();

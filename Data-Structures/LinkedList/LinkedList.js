@@ -152,6 +152,34 @@ class LinkedList {
 
     console.log("Head --> ", values.join(" --> "), " --> Null");
   }
+  reverse()
+  {
+    let current = this.head;
+    let pointers = [];
+
+    if (current === null)
+    {
+      console.log("list is empty");
+      return ;
+    }
+
+
+    while (current !== null) 
+    {
+      pointers.push(current);
+      current = current.next;
+    }
+    if (pointers.length == 1)
+      return ;
+
+    this.head = pointers[pointers.length - 1];
+    for(let i = pointers.length - 1; i > 0 ; i--)
+    {
+      pointers[i].next = pointers[i - 1];
+    }
+    pointers[0].next = null;
+    
+  }
 }
 
 module.exports = LinkedList;
