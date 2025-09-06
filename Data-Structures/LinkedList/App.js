@@ -3,7 +3,7 @@ const reverse = require("./reverse/reverse");
 
 
 const list = new LinkedList();
-console.log("LIST 1");
+console.log("EXAMPLE 1");
 console.log("---------------------");
 
 list.insertAt(0,0);
@@ -23,7 +23,7 @@ list.display();
 list.reverse();
 list.display();
 
-console.log("\nLIST 2");
+console.log("\nEXAMPLE 2");
 console.log("---------------------");
 
 const list1 = new LinkedList();
@@ -51,7 +51,7 @@ list1.display();
 list1.reverse();
 list1.display();
 
-console.log("\nLIST 3");
+console.log("\nEXAMPLE 3");
 console.log("---------------------");
 
 
@@ -62,13 +62,13 @@ list2.reverse();
 list2.display();
 
 
-console.log("\nLIST 4");
+console.log("\nEXAMPLE 4");
 console.log("---------------------");
 
 const list3 = new LinkedList();
 list3.reverse();
 
-console.log("\nLIST 5");
+console.log("\nEXAMPLE 5");
 console.log("---------------------");
 
 const list4 = new LinkedList();
@@ -79,3 +79,46 @@ list4.add("mango");
 list4.display();
 reverse(list4);
 list4.display();
+
+
+console.log("\nEXAMPLE 6");
+console.log("---------------------");
+
+const list5 = new LinkedList();
+list5.add(1);
+list5.add(2);
+list5.add(3);
+list5.display();
+
+const list6 = new LinkedList();
+list6.add(2);
+list6.add(4);
+list6.add(6);
+list6.display();
+
+const list56 = LinkedList.mergeSortLists(list5, list6);
+list56.display();
+
+console.log("\nEXAMPLE 7");
+console.log("---------------------");
+
+const list7 = new LinkedList();
+list7.add(1);
+list7.add(2);
+list7.add(3);
+list7.display();
+
+const list8 = new LinkedList();
+list8.display();
+
+const list78 = LinkedList.mergeSortLists(list7, list8);
+list78.display();
+
+console.log("\nEXAMPLE 8");
+console.log("---------------------");
+
+const list9 = new LinkedList();
+
+const list10 = new LinkedList();
+
+const list910 = LinkedList.mergeSortLists(list9, list10);

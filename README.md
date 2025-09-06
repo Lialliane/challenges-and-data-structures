@@ -11,3 +11,5 @@
 - ### [Linked List](./Data-Structures/LinkedList//README.md)
 
 - ### [Linked List Reverse](./Data-Structures/LinkedList//reverse/README.md)
+
+- ### [Linked List Merge Sort](./Data-Structures/LinkedList//MergeSorted/README.md)

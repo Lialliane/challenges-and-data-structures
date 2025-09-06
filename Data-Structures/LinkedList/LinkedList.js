@@ -24,13 +24,13 @@ class LinkedList {
   remove(data)
   {
     let current = this.head;
-    // if no head exists
+
     if(current === null)
     {
       console.log("list is empty");
       return ;
     }
-    // in case the value is the head
+
     if(current.value === data)
     {
       if(current.next !== null)
@@ -40,13 +40,13 @@ class LinkedList {
       console.log("value deleted");
       return ;
     }
-    // if only 1 node exist and it doesn't hold the value
+
     if(current.next === null)
     {
       console.log("no such value exist in list");
       return ;
     }
-    // keep reference to current and next to fix linking
+
     let next = current.next;
     do
     {
@@ -87,7 +87,7 @@ class LinkedList {
   insertAt(index, value)
   {
     let current = this.head;
-    // if index is 0, replace head
+
     if(index === 0)
     {
       const newNode = new Node(value);
@@ -95,13 +95,13 @@ class LinkedList {
       this.head = newNode;
       return ;
     }
-    // if list is empty & index is not 0
+
     if (current === null) 
     {
       console.log("no such index exist in list");
       return ;
     }
-    // if only 1 value exist in list
+
     if(current.next === null)
     {
       if(index === 1)
@@ -179,6 +179,85 @@ class LinkedList {
     }
     pointers[0].next = null;
     
+  }
+  static mergeSortLists(list1, list2)
+  {
+    let current1 = list1.head;
+    let current2 = list2.head;
+
+    let newList = new LinkedList();;
+
+    //edge case: one or two of the list are empty
+    if(!current1)
+    {
+      if(!current2){
+        console.log("Lists are empty!");
+        return newList; 
+      }
+      else
+      {
+        newList.head = new Node(current2.value);
+        current2 = current2.next;
+        while(current2)
+        {
+          newList.add(current2.value);
+          current2 = current2.next;
+        }
+        return newList;
+      }
+    }
+    else
+    {
+     if(!current2){
+        newList.head = new Node(current1.value);
+        current1 = current1.next;
+        while(current1)
+        {
+          newList.add(current1.value);
+          current1 = current1.next;
+        }
+        return newList;
+      } 
+    }
+
+    // start with assigning head of the new list
+    if(current1.value > current2.value)
+    {
+        newList.head = new Node(current2.value);
+        current2 = current2.next;
+    }
+    else
+    {
+      newList.head = new Node(current1.value);
+      current1 = current1.next;
+    }
+
+    while(current1 || current2)
+    {
+      if(!current1)
+      {
+        newList.add(current2.value);
+        current2 = current2.next;
+        continue ;
+      }
+      if(!current2)
+      {
+        newList.add(current2.value);
+        current2 = current2.next;
+        continue ;
+      }
+      if(current1.value > current2.value)
+      {
+        newList.add(current2.value);
+        current2 = current2.next;
+      }
+      else
+      {
+        newList.add(current1.value);
+        current1 = current1.next;
+      }
+    }
+    return newList;
   }
 }
 
