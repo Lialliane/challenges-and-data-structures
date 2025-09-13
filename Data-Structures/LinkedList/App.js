@@ -122,3 +122,49 @@ const list9 = new LinkedList();
 const list10 = new LinkedList();
 
 const list910 = LinkedList.mergeSortLists(list9, list10);
+
+
+console.log("\nEXAMPLE 9");
+console.log("---------------------");
+
+
+const list11 = new LinkedList();
+list11.add(1);
+list11.add(2);
+list11.add(3);
+list11.add(4);
+list11.add(5);
+list11.add(6);
+list11.display();
+let k = 0;
+console.log(`k = ${k}`);
+
+list11.rotateLeft(k);
+
+list11.display();
+console.log(`\n`);
+list11.display();
+k = 6;
+console.log(`k = ${k}`);
+
+list11.rotateLeft(k);
+
+list11.display();
+console.log(`\n`);
+list11.display();
+k = 4;
+console.log(`k = ${k}`);
+
+list11.rotateLeft(k);
+
+list11.display();
+list11.rotateLeft(2);
+
+console.log(`\n`);
+list11.display();
+k = -3;
+console.log(`k = ${k}`);
+
+list11.rotateLeft(k);
+
+list11.display();
