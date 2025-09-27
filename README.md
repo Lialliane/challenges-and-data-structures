@@ -17,3 +17,5 @@
 - ### [Linked List Rotate K](./Data-Structures/LinkedList//rotateLinkedList/README.md)
 
 - ### [Stack & Queue](./Data-Structures/Stack%20&%20Queue/Stack&Queue-Implementation/README.md)
+
+- ### [Min Stack](./Data-Structures/Stack%20&%20Queue/MinStack/README.md)
