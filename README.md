@@ -21,3 +21,5 @@
 - ### [Min Stack](./Data-Structures/Stack%20&%20Queue/MinStack/README.md)
 
 - ### [Stack Delete Middle](./Data-Structures/Stack%20&%20Queue/DeleteMiddleElement/README.md)
+
+- ### [Binary Search Tree](./Data-Structures/Trees/TreeImplementation/README.md)
