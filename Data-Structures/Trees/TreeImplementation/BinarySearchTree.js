@@ -67,6 +67,29 @@ class BinarySearchTree extends BinaryTree {
 
     return node;
   }
+
+  FindSecondMax()
+  {
+    let current = this.root;
+    let parent;
+
+    if(!current)
+      return null;
+
+    while(current.right)
+    {
+      parent = current;
+      current = current.right;
+    }
+    if(!current.left)
+      return parent? parent.value: null;
+    else
+      current = current.left;
+
+    while(current.right)
+      current = current.right;
+    return current.value;
+  }
 }
 
 module.exports = BinarySearchTree;

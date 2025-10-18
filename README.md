@@ -23,3 +23,5 @@
 - ### [Stack Delete Middle](./Data-Structures/Stack%20&%20Queue/DeleteMiddleElement/README.md)
 
 - ### [Binary Search Tree](./Data-Structures/Trees/TreeImplementation/README.md)
+
+- ### [Second Max value Tree](./Data-Structures/Trees/TreeImplementation/SecondMaxValue//README.md)

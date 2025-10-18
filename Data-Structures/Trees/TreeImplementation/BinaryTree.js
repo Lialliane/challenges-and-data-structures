@@ -55,8 +55,35 @@ class BinaryTree {
 
     this.print(node.left, indent + 4);
   }
-}
 
+  findSecondMax() 
+  {
+    let current = this.root
+    if (!current) 
+      return null;
+    else if(!current.left && current.right)
+      return null;
+
+    let max = current.value;
+    let second = null;
+  
+    function check(node) {
+      if (!node) return;
+      if (node.value > max) {
+        second = max;
+        max = node.value;
+      } else if (second && node.value > second && node.value < max) {
+        second = node.value;
+      }
+      check(node.left);
+      check(node.right);
+    }
+    check(current);
+    
+    return second === null ? null : second;
+  }
+
+}
 
 
 module.exports = BinaryTree;

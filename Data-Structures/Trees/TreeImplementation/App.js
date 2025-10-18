@@ -45,3 +45,5 @@ console.log("---INORDER----");
 searchtree.inOrder();
 console.log("---POSTORDER----");
 searchtree.postOrder();
+
+
