@@ -25,3 +25,5 @@
 - ### [Binary Search Tree](./Data-Structures/Trees/TreeImplementation/README.md)
 
 - ### [Second Max value Tree](./Data-Structures/Trees/TreeImplementation/SecondMaxValue//README.md)
+
+- ### [Leaf sum](./Data-Structures/Trees/TreeImplementation/LeafSum/README.md)
